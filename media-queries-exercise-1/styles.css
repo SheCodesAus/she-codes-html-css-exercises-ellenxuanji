@@ -1,31 +1,52 @@
 .box {
+    margin: 5px;
+    height: 200px;
 }
 
 .green-box {
+    height: 150px;
+    background-color: lightgreen;
 }
 
 .blue-box {
+    height: 300px;
+    background-color: lightskyblue;
 }
 
 .grey-box {
+    height: 75px;
+    background-color: lightgrey;
 }
 
 /*** Media Queries Below ***/
 
 @media (min-width: 600px) {
     .green-box {
+        height: 200px;
+
     }
     .blue-box {
+        height: 150px;
+        width: calc(100% - 10px);
+        display: inline-block;
     }
     .grey-box {
+        display: inline-block;
+        width: calc(100%/2 - 10px);
     }
 }
 
 @media (min-width: 900px) {
     .green-box {
+        height: 300px;
     }
     .blue-box {
+        height: 350px;
+        width: calc(100%/3 - 10px);
     }
     .grey-box {
+        height: 250px;
+        width: calc(100%/4 - 10px);
     }
 }
+
