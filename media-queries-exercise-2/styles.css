@@ -12,11 +12,15 @@ header {
 }
 
 h2 {
+    margin-bottom: 0%;
+    padding-top: 20px;
+    height: 35px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #5e7992;
     color: #fff;
     font-size: 1rem;
+    text-align: center;
 }
 
 p {
@@ -40,6 +44,11 @@ input {
 }
 
 .form-item {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
 }
 
 button {
@@ -50,7 +59,26 @@ button {
 
 input,
 button {
+    width: calc(100% - 20px);
+    height: 40px;
+    text-align: center;
     font-size: 1rem;
     border-radius: 2px;
 }
 
+@media (min-width:600px) {
+    .row {
+        display: inline-block;
+        width: calc(100%/2 - 10px);
+    }
+    div,input {
+        padding-right: 2px;
+    }
+}
+
+@media (min-width:900px) {
+    #form-wrapper {
+        display: inline-block;
+        width: 44%;
+    }
+}
